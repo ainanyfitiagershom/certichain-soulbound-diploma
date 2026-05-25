@@ -1,6 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract DiplomaSoulbound {
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract DiplomaSoulbound is ERC721, Ownable {
+
+    constructor() ERC721("CertiChainDiploma", "CCD") Ownable(msg.sender) {
+
+    }
 
 }
