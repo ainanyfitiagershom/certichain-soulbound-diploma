@@ -1,0 +1,24 @@
+{
+  "name": "certichain-soulbound-diploma",
+  "version": "1.0.0",
+  "description": "Nous retenons le sujet **Diplôme Soulbound** proposé dans le mini-projet final.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ainanyfitiagershom/certichain-soulbound-diploma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ainanyfitiagershom/certichain-soulbound-diploma/issues"
+  },
+  "homepage": "https://github.com/ainanyfitiagershom/certichain-soulbound-diploma#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  }
+}
