@@ -25,6 +25,13 @@ contract DiplomaSoulbound is ERC721, Ownable {
         nextTokenId = 1;
     }
 
+    /// @notice Issues a new soulbound diploma to a student.
+    /// @param student Wallet address of the student.
+    /// @param studentName Name or identifier of the student.
+    /// @param diplomaName Name of the diploma.
+    /// @param year Graduation year.
+    /// @param mention Mention or specialization.
+    /// @return tokenId Generated diploma token ID.
     function issueDiploma(
         address student,
         string memory studentName,
@@ -56,6 +63,15 @@ contract DiplomaSoulbound is ERC721, Ownable {
         return tokenId;
     }
 
+    /// @notice Returns all information of a diploma.
+    /// @param tokenId Diploma token ID.
+    /// @return studentName Name or identifier of the student.
+    /// @return diplomaName Name of the diploma.
+    /// @return year Graduation year.
+    /// @return mention Mention or specialization.
+    /// @return issuedAt Timestamp of diploma issuance.
+    /// @return revoked Revocation status.
+    /// @return owner Current owner of the diploma token.
     function getDiploma(uint256 tokenId)
         public
         view
@@ -84,6 +100,8 @@ contract DiplomaSoulbound is ERC721, Ownable {
         );
     }
 
+    /// @notice Revokes an existing diploma.
+    /// @param tokenId Diploma token ID to revoke.
     function revokeDiploma(uint256 tokenId) public onlyOwner {
         require(_ownerOf(tokenId) != address(0), "Diploma does not exist");
         require(!diplomas[tokenId].revoked, "Diploma already revoked");
