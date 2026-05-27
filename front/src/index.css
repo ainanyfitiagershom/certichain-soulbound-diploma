@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #f6f1e7;
+  --bg-elev: #fbf7ee;
+  --ink: #1a1714;
+  --ink-soft: #5a534b;
+  --ink-mute: #8a8278;
+  --rule: #d9cfbd;
+  --rule-soft: #ebe3d2;
+  --accent: #6b1a1a;
+  --accent-soft: #f0e3e0;
+  --success: #2e5d3a;
+  --danger: #8a2828;
+}
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.serif {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+.wordmark {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
