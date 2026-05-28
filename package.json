@@ -4,7 +4,9 @@
   "description": "Nous retenons le sujet **Diplôme Soulbound** proposé dans le mini-projet final.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^4.0.12",
     "@nomicfoundation/hardhat-toolbox": "^7.0.0",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.6",
     "@types/node": "^22.19.19",
     "ethers": "^6.16.0",
     "hardhat": "^3.5.1",
