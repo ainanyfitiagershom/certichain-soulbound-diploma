@@ -1,6 +1,7 @@
 import { useWallet } from './hooks/useWallet'
 import { IssueDiplomaForm } from './components/IssueDiplomaForm'
 import { RevokeDiplomaForm } from './components/RevokeDiplomaForm'
+import { TransferOwnershipForm } from './components/TransferOwnershipForm'
 import { VerifyDiplomaForm } from './components/VerifyDiplomaForm'
 import { Seal } from './components/Seal'
 import { CONTRACT_ADDRESS, ETHERSCAN_BASE } from './contract/config'
@@ -43,6 +44,7 @@ function App() {
     hasMetaMask,
     connect,
     switchToSepolia,
+    refreshOwner,
   } = useWallet()
 
   return (
@@ -160,6 +162,14 @@ function App() {
               description="Réservé à l'administrateur du contrat."
             >
               <RevokeDiplomaForm signer={signer} />
+            </Section>
+
+            <Section
+              eyebrow="Administration"
+              title="Transférer la propriété du contrat"
+              description="Désigne un nouvel administrateur. Vous perdez immédiatement vos droits."
+            >
+              <TransferOwnershipForm signer={signer} onTransferred={refreshOwner} />
             </Section>
           </>
         )}
