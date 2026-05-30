@@ -19,7 +19,7 @@
 | **DApp en ligne** | [ainanyfitiagershom.github.io/certichain-soulbound-diploma](https://ainanyfitiagershom.github.io/certichain-soulbound-diploma/) |
 | **Smart contract sur Sepolia** | [`0x4e6A699603829A64bccabd6Be9e5E5BF61D26fc8`](https://sepolia.etherscan.io/address/0x4e6A699603829A64bccabd6Be9e5E5BF61D26fc8) |
 | **Token tracker** | CertiChainDiploma (CCD) |
-| **Vidéo de démonstration** | *à venir ([Lien YouTube](https://youtu.be/8JxcL60T1mU))* |
+| **Vidéo de démonstration** | ([Lien YouTube](https://youtu.be/8JxcL60T1mU))* |
 | **Repository GitHub** | [ainanyfitiagershom/certichain-soulbound-diploma](https://github.com/ainanyfitiagershom/certichain-soulbound-diploma) |
 
 ---
